@@ -3,7 +3,7 @@ import ModeSwitchBar from "./components/ModeSwitchBar";
 import StandardCalculator from "./components/StandardCalculator";
 import ScientificCalculator from "./components/ScientificCalculator";
 import type { CalculatorMode } from "@/lib/types";
-import { useState, Activity } from "react";
+import { useState } from "react";
 
 
 export default function App() {
@@ -13,12 +13,8 @@ export default function App() {
     <main className="flex items-center justify-center h-screen w-screen">
       <CalculatorWrapper>
         <ModeSwitchBar mode={mode} setMode={setMode} />
-        <Activity mode={mode === "standard" ? "visible" : "hidden"}>
-          <StandardCalculator />
-        </Activity>
-        <Activity mode={mode === "scientific" ? "visible" : "hidden"}>
-          <ScientificCalculator />
-        </Activity>
+        {mode === "standard" && <StandardCalculator />}
+        {mode === "scientific" && <ScientificCalculator />}
       </CalculatorWrapper>
     </main>
   );
