@@ -10,7 +10,7 @@ export default function App() {
   const [mode, setMode] = useState<CalculatorMode>("standard");
 
   return (
-    <main className="flex items-center justify-center h-screen w-screen">
+    <main className="flex items-center justify-center w-full h-full">
       <CalculatorWrapper>
         <ModeSwitchBar mode={mode} setMode={setMode} />
         {mode === "standard" && <StandardCalculator />}
