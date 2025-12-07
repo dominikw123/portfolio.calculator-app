@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function CalculatorWrapper({ children }: { children: React.ReactNode; }) {
   return (
-    <Card className="w-full max-w-lg">
+    <Card className="flex flex-col items-center justify-center h-full min-h-screen w-screen shadow-none relative sm:min-h-auto sm:w-full sm:max-w-lg sm:border-gray-200 sm:rounded-xl sm:shadow-sm">
       <CardContent className="flex flex-col gap-4">
         {children}
       </CardContent>
