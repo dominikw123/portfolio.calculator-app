@@ -1,33 +1,47 @@
 import CalculatorButton from "./CalculatorButton";
 
-export default function ScientificCalculatorKeypad() {
+type ScientificCalculatorKeypadProps = {
+  handleDecimal: (value: string) => void;
+  handleClear: () => void;
+  handlePercentage: () => void;
+  handleSquareRoot: () => void;
+  handleSin: () => void;
+  handleCos: () => void;
+  handleTan: () => void;
+  handleLog: () => void;
+  handlePi: () => void;
+  handleOperator: (value: string) => void;
+  handleEqual: () => void;
+};
+
+export default function ScientificCalculatorKeypad({ handleDecimal, handleClear, handlePercentage, handleSquareRoot, handleSin, handleCos, handleTan, handleLog, handlePi, handleOperator, handleEqual }: ScientificCalculatorKeypadProps) {
   return (
     <div className="grid grid-cols-4 grid-rows-6 gap-3">
-      <CalculatorButton className="bg-red-100 border-red-300 text-red-500 hover:bg-red-200 hover:border-red-400 hover:text-red-600" onClick={() => console.log("C")}>C</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("%")}>%</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("√")}>√</CalculatorButton>
-      <CalculatorButton className="bg-gray-100 border-gray-300 text-gray-500 hover:bg-gray-200 hover:border-gray-400 hover:text-gray-600" onClick={() => console.log("÷")}>÷</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("sin")}>sin</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("cos")}>cos</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("tan")}>tan</CalculatorButton>
-      <CalculatorButton className="bg-gray-100 border-gray-300 text-gray-500 hover:bg-gray-200 hover:border-gray-400 hover:text-gray-600" onClick={() => console.log("×")}>×</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("log")}>log</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("pi")}>pi</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("^")}>^</CalculatorButton>
-      <CalculatorButton className="bg-gray-100 border-gray-300 text-gray-500 hover:bg-gray-200 hover:border-gray-400 hover:text-gray-600" onClick={() => console.log("-")}>-</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("1")}>1</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("2")}>2</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("3")}>3</CalculatorButton>
-      <CalculatorButton className="bg-gray-100 border-gray-300 text-gray-500 hover:bg-gray-200 hover:border-gray-400 hover:text-gray-600" onClick={() => console.log("+")}>+</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("4")}>4</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("5")}>5</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("6")}>6</CalculatorButton>
-      <CalculatorButton className="row-span-2 h-full bg-green-100 border-green-300 text-green-500 hover:bg-green-200 hover:border-green-400 hover:text-green-600" onClick={() => console.log("=")}>=</CalculatorButton>
+      <CalculatorButton className="bg-red-100 border-red-300 text-red-500 hover:bg-red-200 hover:border-red-400 hover:text-red-600" onClick={handleClear}>C</CalculatorButton>
+      <CalculatorButton onClick={handlePercentage}>%</CalculatorButton>
+      <CalculatorButton onClick={handleSquareRoot}>√</CalculatorButton>
+      <CalculatorButton className="bg-gray-100 border-gray-300 text-gray-500 hover:bg-gray-200 hover:border-gray-400 hover:text-gray-600" onClick={() => handleOperator("÷")}>÷</CalculatorButton>
+      <CalculatorButton onClick={handleSin}>sin</CalculatorButton>
+      <CalculatorButton onClick={handleCos}>cos</CalculatorButton>
+      <CalculatorButton onClick={handleTan}>tan</CalculatorButton>
+      <CalculatorButton className="bg-gray-100 border-gray-300 text-gray-500 hover:bg-gray-200 hover:border-gray-400 hover:text-gray-600" onClick={() => handleOperator("×")}>×</CalculatorButton>
+      <CalculatorButton onClick={handleLog}>log</CalculatorButton>
+      <CalculatorButton onClick={handlePi}>pi</CalculatorButton>
+      <CalculatorButton onClick={() => handleOperator("^")}>^</CalculatorButton>
+      <CalculatorButton className="bg-gray-100 border-gray-300 text-gray-500 hover:bg-gray-200 hover:border-gray-400 hover:text-gray-600" onClick={() => handleOperator("-")}>-</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("1")}>1</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("2")}>2</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("3")}>3</CalculatorButton>
+      <CalculatorButton className="bg-gray-100 border-gray-300 text-gray-500 hover:bg-gray-200 hover:border-gray-400 hover:text-gray-600" onClick={() => handleOperator("+")}>+</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("4")}>4</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("5")}>5</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("6")}>6</CalculatorButton>
+      <CalculatorButton className="row-span-2 h-full bg-green-100 border-green-300 text-green-500 hover:bg-green-200 hover:border-green-400 hover:text-green-600" onClick={handleEqual}>=</CalculatorButton>
       <CalculatorButton onClick={() => console.log("7")}>7</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("8")}>8</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("9")}>9</CalculatorButton>
-      <CalculatorButton className="col-span-2" onClick={() => console.log("0")}>0</CalculatorButton>
-      <CalculatorButton onClick={() => console.log(".")}>.</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("8")}>8</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("9")}>9</CalculatorButton>
+      <CalculatorButton className="col-span-2" onClick={() => handleDecimal("0")}>0</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal(".")}>.</CalculatorButton>
     </div>
   );
 }
