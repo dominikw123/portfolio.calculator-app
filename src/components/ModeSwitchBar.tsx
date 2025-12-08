@@ -8,7 +8,7 @@ type ModeSwitchBarProps = {
 
 export default function ModeSwitchBar({ mode, setMode }: ModeSwitchBarProps) {
   return (
-    <div className="flex items-center gap-2 w-full absolute top-6 sm:static">
+    <div className="flex items-center gap-2">
       <Button size="lg" variant={mode === "standard" ? "default" : "secondary"} onClick={() => setMode("standard")}>
         Standard
       </Button>
