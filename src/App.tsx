@@ -29,7 +29,7 @@ export default function App() {
   return (
     <main className="p-0 flex items-center justify-center w-full min-h-screen overflow-x-hidden sm:p-10">
       <CalculatorWrapper>
-        <div className="flex items-center justify-between w-full relative sm:static mb-4 sm:mb-0">
+        <div className="flex items-center justify-between w-full relative sm:static mb-0">
           <ModeSwitchBar mode={mode} setMode={setMode} />
           <ThemeToggleButton />
         </div>
