@@ -37,7 +37,7 @@ export default function ScientificCalculatorKeypad({ handleDecimal, handleClear,
       <CalculatorButton onClick={() => handleDecimal("5")}>5</CalculatorButton>
       <CalculatorButton onClick={() => handleDecimal("6")}>6</CalculatorButton>
       <CalculatorButton className="row-span-2 h-full bg-green-100 border-green-300 text-green-500 hover:bg-green-200 hover:border-green-400 hover:text-green-600 dark:border-green-500 dark:text-green-500 dark:hover:bg-green-500 dark:hover:text-white" onClick={handleEqual}>=</CalculatorButton>
-      <CalculatorButton onClick={() => console.log("7")}>7</CalculatorButton>
+      <CalculatorButton onClick={() => handleDecimal("7")}>7</CalculatorButton>
       <CalculatorButton onClick={() => handleDecimal("8")}>8</CalculatorButton>
       <CalculatorButton onClick={() => handleDecimal("9")}>9</CalculatorButton>
       <CalculatorButton className="col-span-2" onClick={() => handleDecimal("0")}>0</CalculatorButton>
