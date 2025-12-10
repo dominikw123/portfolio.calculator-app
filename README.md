@@ -4,7 +4,7 @@ The project is structured with modular components and reusable hooks, focuses on
 
 ## __🚀 Live Preview__
 <!-- TODO: after deployment replace with the actual link -->
-[Click here to view the app online!](https://your-deployed-app-link.com)
+[Click here to view the app online!](https://portfolio-calculator-app2204.vercel.app/)
 
 ## __🧰 Tech Stack__
 - Vite
