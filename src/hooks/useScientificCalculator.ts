@@ -1,7 +1,7 @@
 import { isDisplayTooLong, sanitize, triggerError } from "@/lib/utils";
 import { useState } from "react";
 
-const MAX_DISPLAY_LENGTH = 16;
+const MAX_DISPLAY_LENGTH = 12;
 
 export default function useScientificCalculator() {
   const [currentValue, setCurrentValue] = useState<string>("0");
