@@ -9,18 +9,8 @@ import { useState, useEffect } from "react";
 export default function App() {
   const [mode, setMode] = useState<CalculatorMode>(() => {
     const savedMode = localStorage.getItem("calculatorMode") as CalculatorMode | null;
-    if (savedMode === "standard" || savedMode === "scientific") {
-      return savedMode;
-    }
-    return "standard";
+    return savedMode === "scientific" ? "scientific" : "standard";
   });
-
-  useEffect(() => {
-    const savedMode = localStorage.getItem("calculatorMode") as CalculatorMode | null;
-    if (savedMode === "standard" || savedMode === "scientific") {
-      setMode(savedMode);
-    }
-  }, []);
 
   useEffect(() => {
     localStorage.setItem("calculatorMode", mode);
