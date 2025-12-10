@@ -8,7 +8,7 @@ type CalculatorButtonProps = {
 
 export default function CalculatorButton({ children, className, onClick }: CalculatorButtonProps) {
   return (
-    <Button className={"text-3xl w-full p-10 " + className} variant="outline" onClick={onClick} >
+    <Button className={"text-2xl sm:text-3xl w-full p-8 sm:p-10 " + className} variant="outline" onClick={onClick} >
       {children}
     </Button >
   );

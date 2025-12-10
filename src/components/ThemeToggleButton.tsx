@@ -7,7 +7,7 @@ export default function ThemeToggleButton() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <Button variant="secondary" size="icon-lg" onClick={toggleTheme}>
+    <Button variant="secondary" size="icon-lg" className="ml-2" onClick={toggleTheme}>
       <FontAwesomeIcon icon={theme === "light" ? faMoon : faSun} />
     </Button>
   );
