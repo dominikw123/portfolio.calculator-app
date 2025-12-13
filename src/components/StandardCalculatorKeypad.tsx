@@ -1,4 +1,4 @@
-import CalculatorButton from "./CalculatorButton";
+import CalculatorButton from "@/components/CalculatorButton";
 
 type StandardCalculatorKeypadProps = {
   handleDecimal: (value: string) => void;

@@ -1,8 +1,8 @@
-import CalculatorWrapper from "./components/CalculatorWrapper";
-import ModeSwitchBar from "./components/ModeSwitchBar";
-import StandardCalculator from "./components/StandardCalculator";
-import ScientificCalculator from "./components/ScientificCalculator";
-import ThemeToggleButton from "./components/ThemeToggleButton";
+import CalculatorWrapper from "@/components/CalculatorWrapper";
+import ModeSwitchBar from "@/components/ModeSwitchBar";
+import StandardCalculator from "@/components/StandardCalculator";
+import ScientificCalculator from "@/components/ScientificCalculator";
+import ThemeToggleButton from "@/components/ThemeToggleButton";
 import type { CalculatorMode } from "@/lib/types";
 import { useState, useEffect } from "react";
 

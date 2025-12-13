@@ -1,5 +1,5 @@
-import CalculatorDisplay from "./CalculatorDisplay";
-import ScientificCalculatorKeypad from "./ScientificCalculatorKeypad";
+import CalculatorDisplay from "@/components/CalculatorDisplay";
+import ScientificCalculatorKeypad from "@/components/ScientificCalculatorKeypad";
 import useScientificCalculator from "@/hooks/useScientificCalculator";
 
 export default function ScientificCalculator() {

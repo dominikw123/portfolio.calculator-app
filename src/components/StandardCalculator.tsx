@@ -1,5 +1,5 @@
-import CalculatorDisplay from "./CalculatorDisplay";
-import StandardCalculatorKeypad from "./StandardCalculatorKeypad";
+import CalculatorDisplay from "@/components/CalculatorDisplay";
+import StandardCalculatorKeypad from "@/components/StandardCalculatorKeypad";
 import useStandardCalculator from "@/hooks/useStandardCalculator";
 
 export default function StandardCalculator() {
