@@ -3,7 +3,6 @@ A fully functional calculator application that offers both standard arithmetic a
 The project is structured with modular components and reusable hooks, focuses on maintainability, and delivers a smooth and responsive user experience across all screen sizes. The app also stores user preferences such as theme and calculator mode using local storage.
 
 ## __🚀 Live Preview__
-<!-- TODO: after deployment replace with the actual link -->
 [Click here to view the app online!](https://portfolio-calculator-app2204.vercel.app/)
 
 ## __🧰 Tech Stack__
