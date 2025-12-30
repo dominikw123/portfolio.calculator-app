@@ -5,6 +5,20 @@ The project is structured with modular components and reusable hooks, focuses on
 ## __🚀 Live Preview__
 [Click here to view the app online!](https://portfolio-calculator-app2204.vercel.app/)
 
+## __📸 Screenshots__
+
+### Standard Mode
+<div style="display: flex; gap: 12px;">
+  <img src="./screenshots/standard-light.png" alt="Standard Light" width="49%" style="border-radius: 5px;" />
+  <img src="./screenshots/standard-dark.png" alt="Standard Dark" width="49%" style="border-radius: 5px;" />
+</div>
+
+### Scientific Mode
+<div style="display: flex; gap: 12px;">
+  <img src="./screenshots/scientific-light.png" alt="Scientific Light" width="49%" style="border-radius: 5px;" />
+  <img src="./screenshots/scientific-dark.png" alt="Scientific Dark" width="49%" style="border-radius: 5px;" />
+</div>
+
 ## __🧰 Tech Stack__
 - Vite
 - React
